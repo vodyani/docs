@@ -4,20 +4,18 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VODYANI',
-  tagline: 'Solutions for building a modern Node.js server-side framework.',
+  tagline: '使用 Node.js 构建服务端项目的不二选择。',
   url: 'https://vodyani.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
-  organizationName: 'vodyani', // Usually your GitHub org/user name.
-  projectName: 'vodyani', // Usually your repo name.
-
+  organizationName: 'Vodyani',
+  projectName: 'Vodyani',
   i18n: {
     defaultLocale: 'zh-cn',
     locales: ['zh-cn', 'en'],
   },
-
   presets: [
     [
       'classic',
@@ -70,13 +68,12 @@ const config = {
           },
           {
             type: "dropdown",
-            label: "Version",
+            label: "v8.x",
             position: 'right',
             items: [
               {
-                type: "doc",
-                label: "8.x",
-                docId: "tutorial-basics/congratulations",
+                label: "v8.x",
+                href: "https://vodyani.vercel.app/8",
               },
             ],
           },

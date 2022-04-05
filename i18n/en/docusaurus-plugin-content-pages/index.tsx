@@ -12,12 +12,12 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">Node.js 现代化服务端解决方案。</p>
+        <p className="hero__subtitle">A fantastic solution for Node.js server-side apps.</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            🛸 开始教程
+            🛸 Get Started
           </Link>
         </div>
       </div>
