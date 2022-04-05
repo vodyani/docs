@@ -14,8 +14,8 @@ const config = {
   projectName: 'vodyani', // Usually your repo name.
 
   i18n: {
-    defaultLocale: 'zh-CN',
-    locales: ['zh-CN', 'en'],
+    defaultLocale: 'zh-cn',
+    locales: ['zh-cn', 'en'],
   },
 
   presets: [
