@@ -5,7 +5,7 @@
 const config = {
   title: 'VODYANI',
   tagline: 'Solutions for building a modern Node.js server-side framework.',
-  url: 'https://github.com/vodyani',
+  url: 'https://vodyani.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -118,7 +118,7 @@ const config = {
         appId: '7EZHM0IPQ0',
         // Public API key: it is safe to commit it
         apiKey: '57d416d2d6ed76a1a71a45912177df30',
-        indexName: 'https://github.com/vodyani',
+        indexName: 'vodyani',
         // Optional: see doc section below
         contextualSearch: true,
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
