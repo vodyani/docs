@@ -66,17 +66,18 @@ const config = {
             label: 'Blog',
             position: 'left',
           },
-          {
-            type: "dropdown",
-            label: "v8.x",
-            position: 'right',
-            items: [
-              {
-                label: "v8.x",
-                href: "https://vodyani.vercel.app/8",
-              },
-            ],
-          },
+          // todo: 增加版本控制
+          // {
+          //   type: "dropdown",
+          //   label: "v8.x",
+          //   position: 'right',
+          //   items: [
+          //     {
+          //       label: "v8.x",
+          //       href: "https://vodyani.vercel.app/8",
+          //     },
+          //   ],
+          // },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -93,7 +94,7 @@ const config = {
           },
         ],
       },
-      // todo: 增加文档页面的配置
+      // todo: 增加页脚内容
       footer: {
         style: 'dark',
         links: [
@@ -109,21 +110,20 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} ChoGathK, Inc. `,
       },
-      // todo: 增加引用 https://www.algolia.com/account/api-keys/all?applicationId=7EZHM0IPQ0
       algolia: {
         // The application ID provided by Algolia
         appId: '7EZHM0IPQ0',
         // Public API key: it is safe to commit it
         apiKey: '57d416d2d6ed76a1a71a45912177df30',
         indexName: 'vodyani',
-        // Optional: see doc section below
-        contextualSearch: true,
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
-        // Optional: Algolia search parameters
-        searchParameters: {},
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
+        // // Optional: see doc section below
+        // contextualSearch: true,
+        // // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        // externalUrlRegex: 'external\\.com|domain\\.com',
+        // // Optional: Algolia search parameters
+        // searchParameters: {},
+        // // Optional: path for search page that enabled by default (`false` to disable it)
+        // searchPagePath: 'search',
       },
     }),
 };
