@@ -4,7 +4,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VODYANI',
-  tagline: '使用 Node.js 构建服务端项目的不二选择。',
+  tagline: '构建 Node.js 服务端项目的不二选择。',
   url: 'https://vodyani.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -116,14 +116,14 @@ const config = {
         // Public API key: it is safe to commit it
         apiKey: '57d416d2d6ed76a1a71a45912177df30',
         indexName: 'vodyani',
-        // // Optional: see doc section below
-        // contextualSearch: true,
-        // // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        // externalUrlRegex: 'external\\.com|domain\\.com',
-        // // Optional: Algolia search parameters
-        // searchParameters: {},
-        // // Optional: path for search page that enabled by default (`false` to disable it)
-        // searchPagePath: 'search',
+        // Optional: see doc section below
+        contextualSearch: true,
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+        // Optional: Algolia search parameters
+        searchParameters: {},
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
       },
     }),
 };

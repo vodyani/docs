@@ -10,11 +10,11 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '开箱即用',
+    title: '简单易用',
     Svg: require('@site/static/img/join.svg').default,
     description: (
       <>
-      -
+      通过丰富的内置模块与 CLI 工具，您在非常短的时间内就可以了解如何开发一个健壮的，现代化的服务端单体应用。
       </>
     ),
   },
@@ -23,16 +23,17 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/module.svg').default,
     description: (
       <>
-      -
+      得益于依赖注入与依赖反转的设计哲学，您可以轻松的将不同职责的逻辑区分成独立的模块个体，并赋予他们不同的能力。
       </>
     ),
   },
   {
-    title: '强大的数据处理能力',
+    title: '强大的业务处理能力',
     Svg: require('@site/static/img/convert.svg').default,
     description: (
       <>
-      -
+      参数校验很麻烦？操作数据转换好繁琐？如何设计并解耦业务中的各种逻辑？
+      在 Vodyani 中，这些将不再是困扰你的问题。
       </>
     ),
   },

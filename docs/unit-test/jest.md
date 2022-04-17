@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
+slug: jest
+title: jest
 ---
-
-# 介绍
 
 👷🏻‍♂️ Building ...
