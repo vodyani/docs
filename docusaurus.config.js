@@ -110,22 +110,26 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} ChoGathK, Inc. `,
       },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: '7EZHM0IPQ0',
-        // Public API key: it is safe to commit it
-        apiKey: '57d416d2d6ed76a1a71a45912177df30',
-        indexName: 'vodyani',
-        // Optional: see doc section below
-        contextualSearch: true,
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
-        // Optional: Algolia search parameters
-        searchParameters: {},
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
-      },
     }),
+    themes: [
+      [
+        require.resolve("@easyops-cn/docusaurus-search-local"),
+        {
+          hashed: true,
+          language: ["en", "zh"],
+          translations: {
+            "search_placeholder": "Search",
+            "see_all_results": "See all results",
+            "no_results": "No results.",
+            "search_results_for": "Search results for \"{{ keyword }}\"",
+            "search_the_documentation": "Search the documentation",
+            "count_documents_found": "{{ count }} document found",
+            "count_documents_found_plural": "{{ count }} documents found",
+            "no_documents_were_found": "No documents were found"
+          }
+        },
+      ],
+    ],
 };
 
 module.exports = config;
