@@ -12,6 +12,15 @@ title: 快速开始
 
 ```bash
 npm install -g @vodyani/cli
+```
+
+### 创建：
+
+然后，我们按提示执行命令：
+
+```bash
+# 获取帮助
+vodyani help
 
  __     __   ___    ____   __   __     _      _   _   ___
  \ \   / /  / _ \  |  _ \  \ \ / /    / \    | \ | | |_ _|
@@ -25,13 +34,8 @@ vodyani new       =>  🚀 Create a starter project.
 vodyani api       =>  🔌 Generate complete api modules in the project.
 vodyani domain    =>  🌏 Generate complete domain modules in the project.
 vodyani file      =>  🏭 Generate complete file on demand in the project.
-```
 
-### 创建：
-
-然后，我们按提示执行命令：
-
-```bash
+# 创建项目
 vodyani new
 ```
 
