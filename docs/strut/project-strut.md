@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
 slug: project-strut
-title: 介绍
+title: 架构与设计思路
 ---
 
-> Voydani 单体架构后端参考（并未完全遵循）了 DDD 的分层模式和设计原则，整体分为以下四层：
+> Voydani 单体架构后端参考（并未完全遵循）了 DDD 的分层模式和设计原则，整体分为以下三层：
 
 ### Application Interface (Api)
 
