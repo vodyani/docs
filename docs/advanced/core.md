@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 slug: core
 title: 核心装饰器与常用方法
 ---
