@@ -8,7 +8,7 @@ title: 快速开始
 
 ### 安装：
 
-在一开始，建议您使用 [CLI](http://localhost:3000/docs/advanced/cli) 来简化安装流程，只需要在终端执行命令：
+在一开始，建议您使用 [CLI](./other/cli) 来简化安装流程，只需要在终端执行命令：
 
 ```bash
 npm install -g @vodyani/cli
