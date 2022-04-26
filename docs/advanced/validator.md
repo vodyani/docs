@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: transformer
+slug: validator
 title: 数据验证
 ---
 
