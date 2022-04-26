@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 slug: transformer
 title: 数据转换
 ---
