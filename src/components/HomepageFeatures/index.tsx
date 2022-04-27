@@ -32,8 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/convert.svg').default,
     description: (
       <>
-      参数校验很麻烦？操作数据转换好繁琐？如何设计并解耦业务中的各种逻辑？
-      在 Vodyani 中，这些将不再是困扰你的问题。
+      业务开发中的参数校验，数据转换，切面处理，您都可以在 Vodyani 中找到对应的解决方案。
       </>
     ),
   },

@@ -12,7 +12,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">The obvious choice for building Node.js server-side projects.</p>
+        <p className="hero__subtitle">A fantastic solution for nodejs server-side apps. for those of you who need to create http services.</p>
         <div className={styles.buttons}>
           {/* todo: build en doc */}
           <Link
