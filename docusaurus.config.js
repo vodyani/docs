@@ -21,17 +21,6 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // docs: {
-        //   sidebarPath: require.resolve('./sidebars.js'),
-        //   // Please change this to your repo.
-        //   editUrl: 'https://github.com/vodyani/tree/main/packages/create-vodyani/templates/shared/',
-        // },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/vodyani/tree/main/packages/create-vodyani/templates/shared/',
-        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -57,13 +46,8 @@ const config = {
         items: [
           {
             type: 'doc',
-            label: 'Docs',
+            label: '指南',
             docId: 'intro',
-            position: 'left',
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
             position: 'left',
           },
           // todo: 增加版本控制
