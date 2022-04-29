@@ -11,22 +11,22 @@ title: 依赖介绍
 |核心依赖|nestjs/core|框架运行时|8.x|-|
 |核心依赖|nestjs/common|依赖注入基础组件|8.x|-|
 |核心依赖|nestjs/platform-express|express 基础组件|8.x|-|
-|核心依赖|vodyani/core|模块和通用组件|8.x|-|
+|核心依赖|vodyani/core|模块封装和通用方法组件|8.x|-|
 |核心依赖|vodyani/ark|配置和配置中心模块|8.x|-|
-|核心依赖|vodyani/swagger|open api 模块|8.x|jsdoc|
+|核心依赖|vodyani/swagger|open api(swagger) 模块|8.x|jsdoc|
 |核心依赖|vodyani/winston|日志模块|8.x|log4js|
 |核心依赖|vodyani/transformer|数据转换模块|0.5.x|-|
 |核心依赖|vodyani/validator|数据验证模块|0.13.x|joi|
 |核心依赖|dayjs|时间处理组件|1.11.0|moment|
-|核心依赖|lodash|函数式处理组件|4.17.21|-|
+|核心依赖|lodash|函数式编程组件|4.17.21|-|
 |核心依赖|module-alias|模块路径别名组件|2.2.2|-|
 |核心依赖|rxjs|代理处理组件|7.5.5|-|
 |核心依赖|uuid|uuid 处理组件|8.3.2|-|
-|工程化依赖|vodyani/eslint-config|代码风格规范|1.0.9|tslint|
-|工程化依赖|commitlint/cli|git 提交规范|16.2.3|-|
-|工程化依赖|commitlint/config-conventional|git 提交规范|16.2.1|-|
-|工程化依赖|husky|git 提交钩子|7.0.4|-|
-|单元测试依赖|nestjs/testing|nestjs 测试模块|8.4.1|-|
-|单元测试依赖|supertest|请求测试模块|6.2.2|-|
+|工程化依赖|vodyani/eslint-config|代码风格规范组件|1.0.9|tslint|
+|工程化依赖|commitlint/cli|git 提交规范组件|16.2.3|-|
+|工程化依赖|commitlint/config-conventional|git 提交规范组件|16.2.1|-|
+|工程化依赖|husky|git 提交钩子组件|7.0.4|-|
+|单元测试依赖|nestjs/testing|nestjs 测试组件|8.4.1|-|
+|单元测试依赖|supertest|请求测试组件|6.2.2|-|
 |单元测试依赖|jest|单元测试框架|27.5.1|mocha|
 |单元测试依赖|ts-jest|ts jest 适配器|27.1.3|-|
