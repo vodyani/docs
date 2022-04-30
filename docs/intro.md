@@ -16,7 +16,7 @@ Vodyani 基于 [Nestjs](https://github.com/nestjs/nest) + [TypeScript](https://g
 
 Nest.js 非常巧妙的结合了 TS 中的装饰器和反射机制，帮助我们将不同的类来自动注入到框架内部的 IoC 容器，把类的依赖，引用，初始化委托给了 Nest.js 本身。
 
-这样我们就大大的降低了一些隐形的维护成本，比如我们不需要关心以往面向过程式的调用关系。不需要传递复杂的请求上下文，极大程度地降低了代码结构的复杂度，减少了开发人员的心智负担。
+这样我们就降低了一些隐形的维护成本，比如我们不需要关心以往面向过程式的调用关系。不需要传递复杂的请求上下文，极大程度地降低了代码结构的复杂度，减少了开发人员的心智负担。
 
 ### Nest.js 在哪些地方可以做的更好？
 
@@ -40,11 +40,11 @@ Nest.js 非常巧妙的结合了 TS 中的装饰器和反射机制，帮助我�
 
 ### Vodyani 解决了哪些问题？
 
-1. 在 Nest.js v8.x 的基础上，使用 [Core](./advanced/dust.md) 针对层级和模块组织方式进行封装，并且引入了业务开发中一些常用的方法。
+1. 在 Nest.js v8.x 的基础上，使用 [Core](./advanced/core.md) 针对层级和模块组织方式进行封装，并且引入了业务开发中一些常用的方法。
 
-2. 基于 Nest.js 推荐的 class-transformer + class-validator 进行封装，并提供易用的[transformer](./advanced/transformer.md) 和 [validator](./advanced/validator.md) 模块，我们可以通过引入这两个模块中定义的装饰器或方法，对提供者提供 AOP 切面功能（转换、校验）
+2. 基于 Nest.js 推荐的 class-transformer + class-validator 进行封装，并提供易用的 [transformer](./advanced/transformer.md) 和 [validator](./advanced/validator.md) 模块，我们可以通过引入这两个模块中定义的装饰器或方法，对提供者提供 AOP 切面功能（转换、校验）
 
-3. 开发了 [Ark](./advanced/ark.md) 配置管理模块，你可以通过定义本地文件 + 定义远程配置中心引入的方式，轻松的管理，读取，写入全局配置。并且 [Core](./advanced/dust.md) 中提供了一个通用的客户端适配器接口，通过实现这个接口，你可以轻松的将客户端适配器注入到 Ark 的动态数据源中进行动态部署。
+3. 开发了 [Ark](./advanced/ark.md) 配置管理模块，你可以通过定义本地文件 + 定义远程配置中心引入的方式，轻松的管理，读取，写入全局配置。并且 [Core](./advanced/core.md) 中提供了一个通用的客户端适配器接口，通过实现这个接口，你可以轻松的将客户端适配器注入到 Ark 的动态数据源中进行动态部署。
 
 4. 开发了 [Dust](./advanced/dust.md) 线程管理模块，你可以通过注入线程池容器或者直接调用线程的方式，来轻松地管理本地线程。
 
@@ -62,4 +62,4 @@ Nest.js 非常巧妙的结合了 TS 中的装饰器和反射机制，帮助我�
 
 1. Vodyani 的版本将始终跟随 Nest.js 进行迭代，除非 Nest.js 不再进行维护。
 
-2. 核心模块与实现都使用统一 `major` 版本号进行管理，升级时将通过 [CLI 工具](./other/cli)进行依赖升级和管理（开发中）。
+2. 核心模块与实现都使用统一 `major` 版本号进行管理，升级时将通过 [CLI 工具](./other/cli)进行依赖升级和管理。

@@ -1,14 +1,14 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 slug: dependencies
-title: 依赖介绍
+title: 工程依赖以及版本
 ---
 
 |类型|名称|介绍|版本|相似组件|
 |:-:|:-:|:-:|:-:|:-:|
 |核心依赖|nestjs/core|框架运行时|8.x|-|
 |核心依赖|nestjs/platform-express|框架运行时|8.x|-|
-|核心依赖|vodyani/core|框架模块封装与核心定义|8.x|-|
+|核心依赖|vodyani/core|层级装饰器与通用方法|8.x|-|
 |核心依赖|nestjs/common|框架依赖注入与核心定义|8.x|-|
 |核心依赖|vodyani/ark|配置和配置中心|8.x|-|
 |核心依赖|vodyani/swagger|open api(swagger)|8.x|jsdoc|

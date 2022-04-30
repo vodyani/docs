@@ -4,7 +4,6 @@ slug: quick-started
 title: 快速开始
 ---
 
-
 ## 准备工作
 
 > 如果需要帮助，请参考 [如何安装 Node.js 环境](./q&a/how-install-node)。
