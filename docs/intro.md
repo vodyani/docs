@@ -38,7 +38,7 @@ Nest.js 非常巧妙的结合了 TS 中的装饰器和反射机制，帮助我�
 
 ### Vodyani 解决了哪些问题？
 
-1. 在 Nest.js v8.x 的基础上，使用 [Core](./advanced/core.md) 针对层级和模块组织方式进行封装，并且引入了业务开发中一些常用的方法。
+1. 在 Nest.js v8.x 的基础上，针对层级和模块组织方式进行封装，并且引入了业务开发中一些常用的方法。
 
 2. 基于 Nest.js 推荐的 class-transformer + class-validator 进行封装，并提供易用的 [transformer](./advanced/transformer.md) 和 [validator](./advanced/validator.md) 模块，我们可以通过引入这两个模块中定义的装饰器或方法，对提供者提供 AOP 切面功能（转换、校验）
 

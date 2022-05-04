@@ -19,7 +19,9 @@ title: 快速开始
 npm install -g @vodyani/cli
 ```
 
-然后，我们按提示执行命令：
+然后执行命令：
+
+> 您只需要根据交互式命令行的提示一步步提交信息，并构建依赖即可
 
 ```bash
 vodyani new
@@ -29,8 +31,9 @@ vodyani new
 
 最后一步，我们在项目根目录下执行命令：
 
+> 等待片刻，您的第一个 Vodyani 服务就会在 `http://localhost:3000` 成功启动 🎉 ~
+
 ```bash
-# 等待片刻，您的第一个 Vodyani 服务就会在 `http://localhost:3000` 成功启动 🎉 ~
 npm run start
 ```
 

@@ -4,24 +4,7 @@ slug: intro
 title: 架构与设计思路
 ---
 
-## 目录结构
-
-- `test`                   单元测试目录
-- `temp`                   临时文件目录
-- `logs`                   临时日志目录
-- `public`                 静态资源目录
-- `resource`               服务资源目录
-- `src`                    服务应用目录
-  - `api`                  应用接口目录
-  - `core`                 应用公共约定目录
-  - `domain`               应用领域服务目录
-  - `infrastructure`       应用基础设施目录
-  - `app.alias.ts`         应用别名约定文件
-  - `app.container.ts`     应用全局模块容器
-  - `app.launcher.ts`      应用构建器
-  - `main.ts`              应用启动目录
-
-## 分层结构
+## 层级结构
 > Vodyani 的分层设计参考但未完全遵循 DDD 的分层模型和设计原则，整体分为以下四层：
 
 ![](../../static/img/architecture.png)
@@ -47,11 +30,34 @@ title: 架构与设计思路
 
 负责提供通用方法、基础定义、全局切面提供者（AOP）。
 
-## 模块结构
+## 层级调用关系
 
 ![](../../static/img/module.png)
 
-- [应用接口模块（Application interface）](../base/api)
-- [领域服务模块（Domain）](../base/domain)
-- [基础设施模块（Infrastructure）](../base/infrastructure.md)
-- [通用约定层（Core）](../base/core.md)
+1. 由 Api 接收 DTO，并向 Domain 传输。
+2. 由 Domain Service 接收 Api 传输的 DTO，并继续向下传输。
+3. 由 Domain Repository 接收 Service 传输的 DTO 转化为 DO 并继续向下传输。
+4. 由 Infrastructure 接收 Domain 传输的 DO，并进行处理和返回结果。
+5. 由 Domain Repository 接收 Infrastructure 传输的数据，转化为 DO 并继续向上返回。
+6. 由 Domain Service 接收 Repository 传输的 DO 转化为 VO 并继续向上返回。
+7. 由 Api 接收 VO，并返回给调用方。
+
+## 整体目录结构
+
+```bash
+.
+├── logs                    临时日志目录
+├── public                  静态资源目录
+├── resource                服务资源目录
+├── src                     服务应用目录
+│   ├── api                 服务接口目录
+│   ├── core                服务公共约定目录
+│   ├── domain              服务领域服务目录
+│   ├── infrastructure      服务基础设施目录
+│   ├── app.alias.ts        服务别名约定文件
+│   ├── app.container.ts    服务全局模块容器
+│   ├── app.launcher.ts     服务构建器
+│   └── main.ts             服务启动目录
+├── temp                    临时文件目录
+└── test                    单元测试目录
+```
