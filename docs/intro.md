@@ -6,9 +6,11 @@ title: 介绍
 
 :::tip 什么是 Vodyani ？
 **Vodyani 是一个专注于解决业务开发的服务端 Node.js 开发脚手架。**
-
-Vodyani 基于 [Nestjs](https://github.com/nestjs/nest) + [TypeScript](https://github.com/microsoft/TypeScript) 开发，针对服务端开发中的常见场景进行了易用的，友好的封装，并按功能提供了丰富的模块。
 :::
+
+Vodyani 基于 [Nest.js](https://github.com/nestjs/nest) + [TypeScript](https://github.com/microsoft/TypeScript) 开发，针对服务端开发中的常见场景进行了易用的，友好的封装，并按职责提供了丰富的模块。
+
+Vodyani 存在的意义是为了让使用 Node.js + Nest.js 服务端开发者能够有一个基础的，能够拿来即用的脚手架。这个脚手架中包含了层级规范、目录规范、编码规范（eslint）、单元测试等一系列框架约束。
 
 ## 为什么不直接用 Nest.js?
 
@@ -18,7 +20,7 @@ Nest.js 非常巧妙的结合了 TS 中的装饰器和反射机制，帮助我�
 
 这样我们就降低了一些隐形的维护成本，比如我们不需要关心以往面向过程式的调用关系。不需要传递复杂的请求上下文，极大程度地降低了代码结构的复杂度，减少了开发人员的心智负担。
 
-### Nest.js 在哪些地方可以做的更好？
+### 哪些地方可以做的更好？
 
 在社区内总是将 Nest.js 比作 Java 生态中的 Spring 框架，但是在这些场景中仍需要开发者自行解决：
 
@@ -46,7 +48,7 @@ Nest.js 非常巧妙的结合了 TS 中的装饰器和反射机制，帮助我�
 
 4. 开发了 [Dust](./advanced/dust.md) 线程管理模块，你可以通过注入线程池容器或者直接调用线程的方式，来轻松地管理本地线程。
 
-5. 结合 Nest.js + Nest.js Swagger 封装和定义全局的数据对象，细分为 DTO/DO/VO 三层，分别对应 `输入`，`处理中`，`输出` 这三种业务处理状态。
+5. 结合 Nest.js + Nest.js Swagger 封装和定义全局的数据对象，细分为 DTO/DO/VO 三层。分别对应 `输入`，`处理中`，`输出` 这三种数据处理状态。
  
 ### Vodyani 的未来展望
 
