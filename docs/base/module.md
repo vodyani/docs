@@ -10,9 +10,9 @@ title: 模块
 
 ![](../../static/img/Modules_1.png)
 
-`Module` 本质上是某一块独立职责功能的集合体的注册表。
+模板是一类功能的封装和集成。
 
-在开发过程中，我们将使用 `Module` 类来对模块与模块之间的依赖关系进行描述，并注入到全局的 IOC 容器中。
+在开发过程中，我们将使用被 `模块注册器` 装饰的类，来对模块与模块之间的依赖关系进行描述，并注入到全局的 IOC 容器中。
 
 ## 模块注册器
 
@@ -104,7 +104,7 @@ import { ContainerModule } from '@vodyani/core'';
   api: [],
   aop: [],
 })
-export class DemoDomain {}
+export class CoreContainer {}
 ```
 
 |参数|类型|含义|
@@ -113,7 +113,7 @@ export class DemoDomain {}
 |infrastructure|array|全局基础设施模块|
 |aop|array|切面提供者|
 
-## 模块内的通用结构
+## 模块内的通用目录以及结构
 
 ```bash
 .
