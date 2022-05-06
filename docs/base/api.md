@@ -20,7 +20,21 @@ HTTP 路由控制器是 Vodyani 服务的最顶层承接者，Controller 的概�
 
 控制器的目的是接收应用的特定请求。路由机制控制哪个控制器接收哪些请求。通常，每个控制器有多个路由，不同的路由可以执行不同的操作。
 
+### 声明路由路径
+
+### 声明路由 [Restful](https://restfulapi.cn/) 请求方法
+
+### 声明路由请求头
+
+### 声明路由重定向
+
+### 获取请求 [Request](http://expressjs.com/en/api.html#req) 对象
+
+### 获取路由参数和传输载体（Request Body）
+
 ## 消费者（Consumer）
+
+示例 Building ...
 
 ## 数据传输对象（DTO）
 
