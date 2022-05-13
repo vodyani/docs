@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 slug: controller
-title: 路由控制器
+title: Controller 控制器
 ---
 
 :::info
