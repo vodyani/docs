@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
 slug: controller
-title: Controller 控制器
+title: 控制器
 ---
 
 :::info
-HTTP 路由控制器是 Vodyani 服务的最顶层承接者，Controller 的概念继承自 Nest.js。
+Controller 控制器是 Vodyani 服务中的请求处理者，Controller 的概念继承自 Nest.js。
 :::
 
 ![](../../../static/img/Controllers_1.png)
