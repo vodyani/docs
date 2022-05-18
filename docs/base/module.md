@@ -4,7 +4,7 @@ slug: module
 title: 模块
 ---
 
-:::tip
+:::info
 模块是 Vodyani 的基石，模块的概念继承自 Nest.js。
 :::
 
