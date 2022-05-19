@@ -5,7 +5,7 @@ title: 控制器
 ---
 
 :::info
-Controller 控制器是 Vodyani 服务中的请求处理者，Controller 的概念继承自 Nest.js。
+`Controller` 控制器是 **Vodyani** 服务中的请求处理者，`Controller` 的概念继承自 **Nest.js**。
 :::
 
 ![](../../../static/img/Controllers_1.png)
@@ -17,7 +17,7 @@ Controller 控制器是 Vodyani 服务中的请求处理者，Controller 的概�
 :::info
 可以在这里查看更多关于 [Restful](https://restfulapi.cn/) 的知识。
 
-Nest.js 为所有标准的 HTTP 方法提供了相应的装饰器：`@Get()`、`@Post()`、`@Put()`、`@Delete()`、`@Patch()`、`@Options()`、`@Head()`。此外，`@All()` 则用于定义一个用于处理所有 HTTP 请求方法的处理程序。
+**Nest.js** 为所有标准的 `HTTP` 方法提供了相应的装饰器：`@Get()、@Post()、@Put()、@Delete()、@Patch()、@Options()、@Head()`。此外，`@All()` 则用于定义一个用于处理所有 `HTTP` 请求方法的处理程序。
 :::
 
 1. 声明一个被 `Controller 装饰器` 包裹的控制器类，并为控制器声明一个基础的通用路由前缀，然后这个前缀可以以 `host + /cats` 的形式被访问。
@@ -36,14 +36,14 @@ export class CatsController {
 }
 ```
 
-当方法被成功调用，并且返回结果时将会将返回 200 状态代码和相关的响应（POST 请求除外）。下面我们将介绍如何处理返回响应：
+当方法被成功调用，并且返回结果时将会将返回 `200` 状态代码和相关的响应（**POST 请求除外**）。下面我们将介绍如何处理返回响应：
 
 1. **标准响应**，当请求处理程序返回一个 JavaScript 对象或数组时，它将自动序列化为 JSON。但是，当它返回一个 JavaScript 基本类型（例如string、number、boolean）时， Nest.js 将只发送值，而不尝试序列化它。这使响应处理变得简单：只需要返回值，其余的由 Nest.js 负责。
 
 2. **自定义响应**，我们可以在函数签名处通过 `@Res()` 注入类库特定的响应对象。使用此方法，你就能使用由该响应对象暴露的原生响应处理函数。您可以使用 `response.status(200).send()` 构建响应。
 
 :::info
-处理 POST 请求（默认响应状态码为 201），可以通过在处理函数外添加 `@HttpCode(...)` 装饰器来修改响应状态码。
+处理 POST 请求（默认响应状态码为 `201`），可以通过在处理函数外添加 `@HttpCode(...)` 装饰器来修改响应状态码。
 :::
 
 ```typescript
@@ -102,9 +102,9 @@ export class CatsController {
 }
 ```
 
-`Request` 对象代表 `HTTP 请求`，并具有查询字符串，请求参数参数，`HTTP 请求头` 和 `HTTP 请求正文` 的属性（在这里阅读更多）。在多数情况下，不必手动获取它们。 我们可以使用专用的装饰器，比如开箱即用的 `@Body()` 或 `@Query()` 。 下面是 Nest.js 提供的装饰器及其代表的 express 对象的对照列表。
+`Request` 对象代表 `HTTP 请求`，并具有查询字符串，请求参数参数，`HTTP 请求头` 和 `HTTP 请求正文` 的属性（在这里阅读更多）。在多数情况下，不必手动获取它们。 我们可以使用专用的装饰器，比如开箱即用的 `@Body()` 或 `@Query()` 。 下面是 **Nest.js** 提供的装饰器及其代表的 **Express** 对象的对照列表。
 
-|装饰器|express 对照|
+|装饰器|Express 对照|
 |:-:|:-:|
 |@Request()，@Req()|req|
 |@Response()，@Res()*|res|

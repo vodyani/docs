@@ -5,14 +5,14 @@ title: 模块
 ---
 
 :::info
-模块是 Vodyani 的基石，模块的概念继承自 Nest.js。
+模块是 **Vodyani** 的基石，模块的概念继承自 **Nest.js**。
 :::
 
 ![](../../static/img/Modules_1.png)
 
 模板是一类功能的封装和集成。
 
-在开发过程中，我们将使用被 `模块注册器` 装饰的类，来对模块与模块之间的依赖关系进行描述，并注入到全局的 IOC 容器中。
+在开发过程中，我们将使用被 `模块注册器` 装饰的类，来对模块与模块之间的依赖关系进行描述，并注入到全局的 **IOC 容器**中。
 
 ## 模块注册器
 
@@ -27,7 +27,7 @@ title: 模块
 
 ### 通用模块注册器
 
-> 在 Vodyani 中，一般不需要在 `Module` 中定义controllers
+> 在 **Vodyani** 中，不需要在 `Module` 中定义 `controllers` 而是应该在应用接口层定义
 
 ```typescript
 import { Module } from '@nestjs/common';
