@@ -39,9 +39,8 @@ import { FixedContext, ProviderFactory } from '@vodyani/core';
 export class DemoManager implements ProviderFactory {
   public static token = Symbol('DemoManager');
 
-  constructor(
-    // private readonly options: any,
-  ) {
+  @FixedContext
+  public create() {
     return {
       inject: [],
       provide: DemoManager.token,
@@ -105,9 +104,8 @@ export class DemoService implements ProviderFactory {
     private readonly options: any,
   ) {}
 
-  constructor(
-    // private readonly options: any,
-  ) {
+  @FixedContext
+  public create() {
     return {
       inject: [
         DemoManager.token,
@@ -132,7 +130,7 @@ export class DemoService implements ProviderFactory {
 ```typescript
 import { Module } from '@nestjs/common';
 
-const manager = new DemoManager()
+const manager = new DemoManager().create()
 
 @Module({
   exports: [manager, DemoProvider],
