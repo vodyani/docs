@@ -139,7 +139,17 @@ async create(@Body(new DtoValidatePipe()) createCatDto: CreateCatDto) {
 
 ### 在 Controller 中绑定管道
 
-使用 `@UsePipes()` 装饰器并创建一个管道实例。
+使用 `@UsePipes()` 装饰器并传递管道类，将实例化过程委托给 `Nest.js` 运行时。
+
+```typescript
+@Post()
+@UsePipes(DtoValidationPipe)
+async create(@Body() createCatDto: CreateCatDto) {
+  this.catsService.create(createCatDto);
+}
+```
+
+当然也可以直接传递实例对象。
 
 ```typescript
 @Post()
@@ -190,3 +200,14 @@ app.useGlobalPipes(new ValidationPipe());
 
 // ... do something
 ```
+
+## 内置管道
+
+- ValidationPipe
+- ParseIntPipe
+- ParseBoolPipe
+- ParseArrayPipe
+- ParseUUIDPipe
+- DefaultValuePipe
+- ParseEnumPipe
+- ParseFloatPipe
