@@ -17,7 +17,7 @@ function HomepageHeader() {
           {/* todo: build en doc */}
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/quick-started">
             🛸 Get Started
           </Link>
         </div>
