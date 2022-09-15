@@ -3,8 +3,8 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'VODYANI',
-  tagline: '构建 Node.js 服务端项目的不二选择。',
+  title: 'Vodyani',
+  tagline: '构建企业级 web 框架的不二之选 ✨',
   url: 'https://vodyani.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',

@@ -8,10 +8,10 @@ title: 快速开始
 
 > 如果需要帮助，请参考 [如何安装 Node.js 环境](./q&a/how-install-node)。
 
-- 操作系统：支持 macOS，Linux，Windows。
-- 运行环境：建议选择 [LTS](https://nodejs.org/en/) 版本，最低要求 12.x。
+- 操作系统：支持 MacOS，Linux，Windows。
+- 运行环境：建议选择 Node.js [LTS](https://nodejs.org/en/) 版本，最低要求 16.14。
 
-## 安装
+## 🏭 安装和构建
 
 1. 建议您使用 CLI 工具 来简化项目初始化流程，首先执行安装命令：
 
@@ -25,13 +25,13 @@ npm install -g @vodyani/cli
 vodyani new
 ```
 
-3. CLI 工具会提示您输入项目名，如果没有输入，默认的项目名是 vodyani
+3. CLI 工具会引导您输入项目名，如果没有输入，默认的项目名是 vodyani
 
 ```bash
 ? Enter the name you want to create, if the name has more than one word please use `-` split. (vodyani)
 ```
 
-4. CLI 工具会提示您是否安装依赖
+4. CLI 工具会引导您安装依赖
 
 ```bash
 ? Do you need auto install all? (Use arrow keys)
@@ -52,7 +52,7 @@ vodyani new
  vodyani project: vodyani is created 🎉
 ```
 
-## 启动
+## 🚀 启动服务
 
 最后一步，我们在项目根目录下执行命令：
 
@@ -62,10 +62,10 @@ npm run start
 
 等待片刻，您的第一个 Vodyani 服务就会在 `http://localhost:3000` 成功启动 🎉 ~
 
-## 遇到问题？
+## 👋 遇到问题？
 
 <br/>
 
 :::info 👉🏻 [discussions](https://github.com/vodyani/vodyani/discussions)
-描述你的问题，提供尽可能详细的复现方法和场景。
+描述您的问题，并提供尽可能详细的复现方法和场景 😲
 :::
