@@ -37,8 +37,8 @@ vodyani 基于 [nest.js](https://github.com/nestjs/nest) 开发，针对 node.js
 * vodyani 根据项目接口的层级封装了 api/core/domain/infrastructure。分别对应 应用接口层，核心定义层，领域服务层，基础设施层。
 * vodyani 根据业务数据的流向封装了 DTO/DO/VO。分别对应 请求数据输入，领域服务处理中，响应数据输出。
 * vodyani 内置了易用的 class-decorator 装饰器工具模块，开发者通过声明对应的装饰器，就能在任意类中开启 AOP 功能。
-* vodyani 内置了强大的 ark（方舟）配置管理模块，通过本地配置文件或引入配置中心的方式，就可以轻松的管理全局配置；并且支持各类 client provider 跟随配置变化进行进行动态重建。
-* vodyani 提供了易用的 dust（星尘）多线程模块，通过引入模块并声明线程 worker 就可以体验 多线程/线程池 的强大威力。
+* vodyani 内置了强大的 ark（方舟）配置管理模块，通过声明本地文件或引入配置中心的方式，就可以轻松的管理全局配置；并且支持各类 client provider 跟随配置变化进行进行动态重建。
+* vodyani 提供了易用的 dust（星尘）多线程模块，通过引入模块并声明线程 worker 就可以体验多线程/线程池的强大威力。
  
 ## 版本介绍
 
