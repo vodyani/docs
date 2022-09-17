@@ -4,10 +4,10 @@ slug: intro
 title: 架构与设计思路
 ---
 
-## 层级结构
-> Vodyani 的分层设计参考但未完全遵循 DDD 的分层模型和设计原则，整体分为以下四层：
+## 层级介绍
+> Vodyani 的分层设计参考了，但未完全遵循 DDD 的分层模型和设计原则，整体分为以下四层：
 
-![](../../static/img/architecture.png)
+![](../../static/img/struct/architecture.png)
 
 ### 应用接口层
 > `Api` 是 DDD 分层模型中 `User Interface` 与 `Application` 的结合
@@ -30,14 +30,16 @@ title: 架构与设计思路
 
 * 负责提供通用方法、基础定义、工具集等等。
 
-## 层级关系
+## 层级结构
+
+![](../../static/img/struct/struct.png)
 
 ## 目录结构
 
 ```bash
 .
 ├── logs                    服务日志目录
-├── public                  静态资源目录（多用于存放前端资源）
+├── public                  静态资源目录（多用于存放静态资源）
 ├── resource                应用资源目录（多用于存放配置信息）
 ├── src                     
 │   ├── api                 应用接口目录
