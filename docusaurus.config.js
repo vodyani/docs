@@ -5,7 +5,7 @@
 const config = {
   title: 'Vodyani',
   tagline: '构建企业级 web 框架的不二之选 ✨',
-  url: 'https://vodyani.vercel.app',
+  url: 'https://vodyani.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -58,7 +58,7 @@ const config = {
           //   items: [
           //     {
           //       label: "v8.x",
-          //       href: "https://vodyani.vercel.app/8",
+          //       href: "https://vodyani.netlify.app/8",
           //     },
           //   ],
           // },
