@@ -10,7 +10,7 @@ vodyani 基于 [nest.js](https://github.com/nestjs/nest) 开发，针对 node.js
 
 ## 设计原则
 
-![](../static/img/vodyani-intro.png)
+![](../static/img/intro/intro.png)
 
 早期的 node.js 开发者使用内置的 http 模块用来监听端口并处理请求响应，但是它的 api 过于原始，所以 express 的出现解决了 request、response 的 api 封装，以及提供了中间件来帮助开发者构建自己的洋葱模型。
 
