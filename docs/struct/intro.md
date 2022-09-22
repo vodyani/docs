@@ -5,7 +5,7 @@ title: 架构与设计思路
 ---
 
 ## 层级介绍
-> Vodyani 的分层设计参考了，但未完全遵循 DDD 的分层模型和设计原则，整体分为以下四层：
+> Vodyani 的分层设计参考但未完全遵循 DDD 的分层模型和设计原则，整体分为以下四层：
 
 ![](../../static/img/struct/architecture.png)
 

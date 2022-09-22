@@ -113,19 +113,20 @@ export class CoreContainer {}
 |infrastructure|array|全局基础设施模块|
 |aop|array|切面提供者|
 
-## 模块内的通用目录以及结构
+## 目录结构
 
 ```bash
 .
-├── base                    模块公共类
-├── common                  模块公共
+├── common                  公共约定目录
 │   ├── abstract            用于声明抽象类
 │   ├── constant            用于声明常量
 │   ├── declare             用于声明依赖
 │   ├── enum                用于声明常量
 │   ├── interface           用于声明接口
 │   └── type                用于声明类型
-├── method                  模块函数方法
-├── module                  模块容器和注册表
-...
+├── decorator               装饰器
+├── method                  函数方法
+├── module                  模块容器
+├── struct                  公共类
+└── provider                提供者
 ```

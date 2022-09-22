@@ -35,5 +35,5 @@ title: 工程依赖以及版本
 |工程化|supertest|单元测试工具|6.2.4|
 |工程化|ts-jest|单元测试工具|27.1.5|
 |运行时|ts-node|本地 typescript 运行时|10.9.1|
-|运行时|typescript|编程语言包|4.8.2|
+|编程语言|typescript|编程语言包|4.8.2|
 |类型支持|@types/x|各类包的附加类型|-|
