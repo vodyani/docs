@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 slug: dependencies
-title: 工程依赖以及版本
+title: 工程依赖
 ---
 
 ## 运行依赖
@@ -9,17 +9,19 @@ title: 工程依赖以及版本
 |类型|名称|介绍|版本|
 |:-:|:-:|:-:|:-:|
 |核心依赖|@nestjs/platform-express|框架平台支持（express）|8.4.7|
-|核心依赖|@vodyani/class-decorator|框架类装饰器|8.x|
+|核心依赖|@nestjs/common|框架运行时|8.4.7|
+|核心依赖|@nestjs/core|框架运行时|8.4.7|
 |核心依赖|@vodyani/core|框架运行时|8.x|
+|核心依赖|@vodyani/class-decorator|框架类装饰器|8.x|
 |核心依赖|@vodyani/utils|框架函数工具集|8.x|
 |项目依赖|@vodyani/ark|配置管理|8.x|
 |项目依赖|@vodyani/swagger|open-api 管理|8.x|
 |项目依赖|@vodyani/winston|日志管理|8.x|
-|项目依赖|dayjs|日期管理|1.11.0|
+|项目依赖|dayjs|日期管理|1.11.5|
 |项目依赖|lodash|函数工具集|4.17.21|
-|项目依赖|module-alias|路径别名管理|2.0.1|
+|项目依赖|module-alias|路径别名管理|2.2.2|
 |项目依赖|rxjs|函数工具集|7.5.6|
-|项目依赖|uuid|唯一ID生成工具|8.3.2|
+|项目依赖|uuid|唯一ID生成工具|9.0.0|
 
 ## 本地开发依赖
 

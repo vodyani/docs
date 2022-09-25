@@ -31,7 +31,14 @@ vodyani new
 ? Enter the name you want to create, if the name has more than one word please use `-` split. (vodyani)
 ```
 
-4. CLI 工具会引导您安装依赖
+4. CLI 工具会引导您安装生效的版本
+
+```bash
+? Select the version you want to create (Use arrow keys)
+❯ 8 
+```
+
+5. CLI 工具会引导您安装依赖
 
 ```bash
 ? Do you need auto install all? (Use arrow keys)
@@ -39,7 +46,7 @@ vodyani new
   no 
 ```
 
-5. 创建完毕
+6. 创建完毕
 
 ```bash
  __     __   ___    ____   __   __     _      _   _   ___ 

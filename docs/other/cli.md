@@ -20,8 +20,8 @@ vodyani help
     \_/     \___/  |____/    |_|   /_/   \_\ |_| \_| |___|
 
 
-vodyani new       =>  🚀 Create a starter project.
-vodyani api       =>  🔌 Generate complete api modules in the project.
-vodyani domain    =>  🌏 Generate complete domain modules in the project.
-vodyani file      =>  🏭 Generate complete file on demand in the project.
+vodyani help             ❓ Get Help.
+vodyani new              🚀 Generating a new application.
+vodyani g <type> [name]  🏭 Generates a file of the specified type.
+vodyani types            📚 Get Help for view the types that can be generated.
 ```

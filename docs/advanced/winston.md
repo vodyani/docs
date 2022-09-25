@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
-slug: core
-title: 顶层设计
+slug: winston
+title: 日志管理
 ---
 
 完善中 👷🏻‍♂️

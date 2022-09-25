@@ -1,9 +1,7 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 slug: dust
-title: 线程与多线程
+title: 多线程管理
 ---
 
-> [👉🏻 github](https://github.com/vodyani/dust)
-
-👷🏻‍♂️ Building ...
+完善中 👷🏻‍♂️
